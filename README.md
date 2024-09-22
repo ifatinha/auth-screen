@@ -9,6 +9,21 @@ Este repositório contém o código-fonte de uma página de login moderna, segur
 - **SASS**: Pré-processador CSS para uma escrita de estilo mais organizada e reutilizável.
 - **JavaScript**: Validação de formulários e interações dinâmicas na página.
 
+## 📂 Estrutura do Projeto
+
+- `index.html`: Página principal do portfólio.
+- `assets/`: Pasta contendo arquivos estáticos.
+  - `config/`: Arquivos de configuração do projeto.
+  - `styles/`: CSS gerado pelo SASS.
+  - `images/`: Imagens utilizadas no projeto.
+  - `scripts/`: Scripts JavaScript.
+  - `scss/`: Arquivos SASS.
+
+- index.html: Estrutura principal da página de login.
+- scss/main.scss: Estilos em SASS, que são compilados para o arquivo CSS.
+- css/main.css: Estilos compilados para uso no navegador.
+- js/main.js: Lógica JavaScript para validações e interações.
+
 ## Funcionalidades
 
 - Validação de email e senha no lado do cliente.
@@ -31,27 +46,6 @@ Este repositório contém o código-fonte de uma página de login moderna, segur
    ```
 
 3. Abra o arquivo index.html no seu navegador.
-
-## Estrutura do Projeto
-
-  ```
-  login-page/
-  ├── assets/
-  │   └── imagens/
-  ├── css/
-  │   └── main.css
-  ├── js/
-  │   └── main.js
-  ├── scss/
-  │   └── main.scss
-  ├── index.html
-  └── README.md
-  ```
-
-- index.html: Estrutura principal da página de login.
-- scss/main.scss: Estilos em SASS, que são compilados para o arquivo CSS.
-- css/main.css: Estilos compilados para uso no navegador.
-- js/main.js: Lógica JavaScript para validações e interações.
 
 ## Como Contribuir
 
