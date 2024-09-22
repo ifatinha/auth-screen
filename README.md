@@ -21,7 +21,7 @@ Este repositório contém o código-fonte de uma página de login moderna, segur
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/login-page.git
+   git clone https://github.com/ifatinha/auth-screen.git
    ```
    
 2. Navegue até o diretório do projeto:
