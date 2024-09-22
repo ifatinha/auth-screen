@@ -2,7 +2,7 @@
 
 Este repositório contém o código-fonte de uma página de login moderna, segura e responsiva. O projeto foi desenvolvido com foco em usabilidade e uma experiência de usuário eficiente, utilizando tecnologias web como HTML, CSS, SASS e JavaScript.
 
-## Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
 - **HTML**: Estruturação da página.
 - **CSS**: Estilização da interface.
@@ -24,14 +24,15 @@ Este repositório contém o código-fonte de uma página de login moderna, segur
 - css/main.css: Estilos compilados para uso no navegador.
 - js/main.js: Lógica JavaScript para validações e interações.
 
-## Funcionalidades
+## 🚀 Funcionalidades
 
-- Validação de email e senha no lado do cliente.
-- Exibição de mensagens de erro e sucesso.
-- Design responsivo, adaptado para diferentes tamanhos de tela.
-- Estilo moderno e personalizável com SASS.
+- ✅ Validação de email e senha no lado do cliente.
+- ⚠️ Exibição de mensagens de erro e sucesso.
+- 📱 Design responsivo, adaptado para diferentes tamanhos de tela.
+- 🎨 Estilo moderno e personalizável com SASS.
 
-## Instalação
+
+## ⚙️ Como rodar o projeto
 
 1. Clone o repositório:
 
@@ -47,7 +48,7 @@ Este repositório contém o código-fonte de uma página de login moderna, segur
 
 3. Abra o arquivo index.html no seu navegador.
 
-## Como Contribuir
+## 📖 Como Contribuir
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests para melhorar o projeto.
 
@@ -78,10 +79,14 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar
    ```
 6. Crie uma Pull Request.
 
-## ©️ Copyright e Licença
+## ©️ Copyright e Licença 📝
 
 **Copyright (c) 2024 {fferreira}**
 
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 Você é livre para usar, modificar e distribuir este projeto, desde que mantenha o aviso de copyright e a licença. Para mais informações, consulte a [Licença MIT](https://opensource.org/licenses/MIT).
+
+## 📧 Contato
+
+Se você tiver alguma dúvida ou quiser entrar em contato, sinta-se à vontade para me enviar uma mensagem pelo [LinkedIn](https://www.linkedin.com/in/ifatima14/) ou por e-mail: [fferreira913@gmail.com](mailto:fferreira913@gmail.com).
