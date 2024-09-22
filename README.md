@@ -1,4 +1,4 @@
-# Login Page
+# Auth Screen
 
 Este repositório contém o código-fonte de uma página de login moderna, segura e responsiva. O projeto foi desenvolvido com foco em usabilidade e uma experiência de usuário eficiente, utilizando tecnologias web como HTML, CSS, SASS e JavaScript.
 
