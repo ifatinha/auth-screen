@@ -17,7 +17,7 @@
         &:nth-child(1) {
             @include flex(center, center);
             background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/images/home-bg.jpg") no-repeat center/cover;
-            flex-basis: 35%;
+            flex-basis: 40%;
 
             @include devices(m) {
                 flex-basis: 100%;
@@ -27,7 +27,7 @@
         &:nth-child(2) {
             @include flex(center, center);
             background: map-get($map: $theme-color, $key: "dark-gray");
-            flex-basis: 65%;
+            flex-basis: 60%;
 
             @include devices(m) {
                 align-items: start;
@@ -78,18 +78,6 @@
             @include text-color("light-gray");
             line-height  : 24px;
             margin-bottom: 1rem;
-
-            a {
-                color     : rgba(40, 167, 69, 1);
-                border    : 2px solid transparent;
-                display   : inline-block;
-                transition: .3s ease-in-out;
-
-                @include hover() {
-                    border-bottom-color: rgb(32.11594, 134.08406, 55.4);
-                    color              : rgb(32.11594, 134.08406, 55.4);
-                }
-            }
         }
 
         h2 {
@@ -176,7 +164,13 @@
             @include font(16);
             box-shadow : #00000026 0px 5px 15px 0px;
             font-weight: 500;
-            padding    : 12px 42px;
+            padding    : 12px 34px;
         }
+    }
+
+    &__buttons {
+        @include flex(center, start);
+        flex-direction: row;
+        gap           : 10px;
     }
 }

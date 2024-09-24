@@ -1,0 +1,13 @@
+@use "../base/mixins"as *;
+@use "../base/typography"as *;
+
+.link-success {
+    @include font(14);
+    color     : rgba(40, 167, 69, 1);
+    display   : inline-block;
+    transition: .3s ease-in-out;
+
+    @include hover() {
+        color: rgb(32.11594, 134.08406, 55.4);
+    }
+}
