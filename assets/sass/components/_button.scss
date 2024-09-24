@@ -1,0 +1,43 @@
+@use "../base/colors"as *;
+@use "../base/typography"as *;
+@use "../base/mixins"as *;
+@use "../layouts/flex"as *;
+
+.btn-primary {
+    @include text-color("pure-white");
+    background   : transparent;
+    border       : 1px solid transparent;
+    border-radius: 6px;
+    cursor       : pointer;
+    display      : inline-block;
+    font-weight  : 400;
+    line-height  : 22px;
+    padding      : 8px 16px;
+    transition   : all .3s ease;
+}
+
+.btn-success {
+    @include font(14);
+    background  : map-get($map: $theme-color, $key: "success");
+    border-color: map-get($map: $theme-color, $key: "success");
+
+    i {
+        margin-right: 1rem;
+    }
+
+    @include hover {
+        background  : map-get($map: $theme-color, $key: "forest-green");
+        border-color: map-get($map: $theme-color, $key: "forest-green");
+    }
+}
+
+.btn-gray {
+    @include font(18);
+    background  : map-get($map: $theme-color, $key: "gray");
+    border-color: map-get($map: $theme-color, $key: "gray");
+
+    @include hover {
+        background  : map-get($map: $theme-color, $key: "medium-gray");
+        border-color: map-get($map: $theme-color, $key: "medium-gray");
+    }
+}

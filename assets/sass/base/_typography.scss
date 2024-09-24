@@ -2,19 +2,14 @@
 @use "sass:map";
 @use "../util/functions"as *;
 
-@mixin _set-font-style($font-family, $size, $weight, $line-height) {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@mixin _set-font-style($font-family, $size) {
    font-family: $font-family;
    font-size  : px-to-rem($size);
-   font-weight: $weight;
-   line-height: $line-height;
 }
 
-@mixin font-primary($size, $weight: 400, $line-height: 1.5) {
-   $font-primary: sans-serif;
-   @include _set-font-style($font-primary, $size, $weight, $line-height);
-}
-
-@mixin font-secondary($size, $weight: 400, $line-height: 1.5) {
-   $font-secondary: sans-serif;
-   @include _set-font-style($font-secondary, $size, $weight, $line-height);
+@mixin font($size) {
+   $font-primary: "Poppins", sans-serif;
+   @include _set-font-style($font-primary, $size);
 }
