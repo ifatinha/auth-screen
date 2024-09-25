@@ -1,9 +1,9 @@
 import { validatePassword, validateEmail } from "./validator.js";
-import { clearErrors } from "./clearErrors.js";
+import { clearErrorsLogin } from "./clearErrors.js";
 import { displayError } from "./displayErro.js";
 
-export const validateForm = () => {
-  const userInputLogin = {
+export const formLoginValidator = () => {
+  const userInput = {
     email: document.querySelector("#email"),
     password: document.querySelector("#password"),
   };
@@ -15,13 +15,15 @@ export const validateForm = () => {
 
   const form = document.querySelector("#formLogin");
 
+  if (!form) return;
+
   form.addEventListener("submit", (ev) => {
     ev.preventDefault();
-    clearErrors(errorMessages);
+    clearErrorsLogin(errorMessages);
     let formIsValid = true;
 
     try {
-      validateEmail(userInputLogin.email.value);
+      validateEmail(userInput.email.value);
     } catch (err) {
       formIsValid = false;
       displayError(
@@ -31,7 +33,7 @@ export const validateForm = () => {
     }
 
     try {
-      validatePassword(userInputLogin.password.value);
+      validatePassword(userInput.password.value);
     } catch (err) {
       formIsValid = false;
       displayError(

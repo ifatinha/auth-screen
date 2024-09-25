@@ -43,18 +43,22 @@
                         <span>Ou</span>
                         <hr class="line2">
                     </div>
-                    <div class="form" id="register">
+                    <form class="form" id="register" method="get">
                         <div class="form__item">
                             <label for="fullname">Nome completo</label>
-                            <input type="text" name="fullname" id="fullname" placeholder="Digite seu nome">
+                            <p class="error-message" id="nameError"></p>
+                            <input type="text" name="fullname" id="fullname" placeholder="Digite seu nome" required>
                         </div>
                         <div class="form__item">
                             <label for="email">Endereço de email</label>
-                            <input type="email" name="email" id="email" placeholder="Insira seu e-mail">
+                            <p class="error-message" id="emailError"></p>
+                            <input type="email" name="email" id="email" placeholder="Insira seu e-mail" required>
                         </div>
                         <div class="form__item">
                             <label for="password">Senha</label>
-                            <input type="password" name="password" id="password" placeholder="Digite sua senha">
+                            <p class="error-message" id="passwordError"></p>
+                            <input type="password" name="password" id="password" placeholder="Digite sua senha"
+                                required>
                         </div>
                         <div class="form__item checkbox">
                             <input type="checkbox" id="terms" name="terms" value="Terms" required>
@@ -69,13 +73,14 @@
                                 Registrar
                             </button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
     </main>
 
     <script src="https://kit.fontawesome.com/09fa9cee0a.js" crossorigin="anonymous"></script>
+    <script type="module" src="../scripts/script.js"></script>
 </body>
 
 </html>
