@@ -1,17 +1,6 @@
 import { validatePassword, validateEmail } from "./validator.js";
-
-const clearErros = (errorMessages) => {
-  errorMessages.emailError.textContent = "";
-  errorMessages.emailError.classList.remove("error");
-
-  errorMessages.passwordError.textContent = "";
-  errorMessages.passwordError.classList.remove("error");
-};
-
-const displayError = (element, message) => {
-  element.textContent = message;
-  element.classList.add("error");
-};
+import { clearErros } from "./clearErros.js";
+import { displayError } from "./displayErro.js";
 
 export const validateForm = () => {
   const userInputLogin = {
@@ -30,7 +19,7 @@ export const validateForm = () => {
     ev.preventDefault();
     clearErros(errorMessages);
     let formIsValid = true;
-    
+
     try {
       validateEmail(userInputLogin.email.value);
     } catch (err) {
