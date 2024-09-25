@@ -11,9 +11,9 @@
     <meta name="author" content="Seu Nome">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#550bcf">
-    <title>Auth Screen</title>
+    <title>Auth Screen - Cadastrar</title>
 
-    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="../styles/main.css">
 
 </head>
 
@@ -21,17 +21,14 @@
     <main class="main">
         <div class="main__column">
             <div class="main__title">
-                <h1><strong>Bem-vindo</strong>, estamos felizes em vê-lo novamente!</h1>
+                <h1><strong>Bem-vindo</strong>, parece que você é novo por aqui!</h1>
             </div>
         </div>
         <div class="main__column">
             <div class="main__container">
                 <div class="main__content">
-                    <p>
-                        <span>Não é um membro?</span>
-                        <a href="assets/pages/register.html" class="link-success">Registre-se</a>
-                    </p>
-                    <h2>Entre na sua conta</h2>
+                    <p><span>Já é membro?</span> <a href="/index.html" class="link-success">Entrar</a></p>
+                    <h2>Registre sua conta</h2>
                     <div class="main__content-buttons">
                         <button type="button" class="btn-primary btn-success" aria-label="Registrar com Google">
                             <i class="fa-brands fa-google"></i>
@@ -46,32 +43,39 @@
                         <span>Ou</span>
                         <hr class="line2">
                     </div>
-                    <form class="form" id="formLogin" method="get">
+                    <div class="form" id="login">
+                        <div class="form__item">
+                            <label for="fullname">Nome completo</label>
+                            <input type="text" name="fullname" id="fullname" placeholder="Digite seu nome">
+                        </div>
                         <div class="form__item">
                             <label for="email">Endereço de email</label>
-                            <p class="error-message" id="emailError"></p>
-                            <input type="email" name="email" id="email" placeholder="Insira seu e-mail" required>
+                            <input type="email" name="email" id="email" placeholder="Insira seu e-mail">
                         </div>
                         <div class="form__item">
                             <label for="password">Senha</label>
-                            <p class="error-message" id="passwordError"></p>
-                            <input type="password" name="password" id="password" placeholder="Digite sua senha"
-                                required>
+                            <input type="password" name="password" id="password" placeholder="Digite sua senha">
                         </div>
-                        <div class="form__item form__buttons">
+                        <div class="form__item checkbox">
+                            <input type="checkbox" id="terms" name="terms" value="Terms" required>
+                            <label for="terms">Concordo com os
+                                <a href="#" class="link-success">Termos</a> e
+                                <a href="#" class="link-success">Politica de
+                                    privacidade</a>
+                            </label>
+                        </div>
+                        <div class="form__item">
                             <button type="submit" class="btn-primary btn-success">
-                                Conecte-se
+                                Registrar
                             </button>
-                            <a href="#" class="link-success">Esqueceu sua senha?</a>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
     <script src="https://kit.fontawesome.com/09fa9cee0a.js" crossorigin="anonymous"></script>
-    <script type="module" src="assets/scripts/script.js"></script>
 </body>
 
 </html>

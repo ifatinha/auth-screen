@@ -21,6 +21,7 @@
 
             @include devices(m) {
                 flex-basis: 100%;
+                min-height: 50vh;
             }
         }
 
@@ -140,23 +141,26 @@
         }
 
         input {
-            @include font(16);
-            appearance   : none;
-            border       : 1px solid transparent;
-            background   : transparent;
-            background   : map-get($map: $theme-color, $key: "slate-gray");
-            border-color : map-get($map: $theme-color, $key: "slate-gray");
-            border-radius: 6px;
-            box-shadow   : #fff 0px 0px 0px 0px;
-            caret-color  : map-get($map: $theme-color, $key: "pure-white");
-            line-height  : 1.5;
-            outline      : none;
-            padding      : 12px 16px;
-            transition   : border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-            width        : 100%;
+            &:not([type="checkbox"]) {
+                @include font(16);
+                appearance   : none;
+                border       : 1px solid transparent;
+                background   : transparent;
+                background   : map-get($map: $theme-color, $key: "slate-gray");
+                border-color : map-get($map: $theme-color, $key: "slate-gray");
+                border-radius: 6px;
+                box-shadow   : #fff 0px 0px 0px 0px;
+                caret-color  : map-get($map: $theme-color, $key: "pure-white");
+                color        : map-get($map: $theme-color, $key: "pure-white");
+                line-height  : 1.5;
+                outline      : none;
+                padding      : 12px 16px;
+                transition   : border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                width        : 100%;
 
-            &:focus {
-                border-color: #80bdff;
+                &:focus {
+                    border-color: #80bdff;
+                }
             }
         }
 
@@ -172,5 +176,25 @@
         @include flex(center, start);
         flex-direction: row;
         gap           : 10px;
+    }
+}
+
+.form__item.checkbox {
+    align-items    : center;
+    flex-direction : row;
+    gap            : 8px;
+    justify-content: start;
+
+    input {
+        border        : 1px solid map-get($map: $theme-color, $key: "cloudy-mist");
+        border-radius : 0.25em;
+        height        : 14px;
+        margin-top    : -3px;
+        vertical-align: top;
+        width         : 14px;
+    }
+
+    label {
+        @include font(14);
     }
 }

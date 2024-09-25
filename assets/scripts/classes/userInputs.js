@@ -1,7 +1,0 @@
-export class UserInputs {
-  constructor(name, email, password) {
-    this.name = name;
-    this.email = email;
-    this.password = password;
-  }
-}

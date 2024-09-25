@@ -176,6 +176,7 @@ a {
 @media screen and (max-width: calc(768px - 1px)) {
   .main__column:nth-child(1) {
     flex-basis: 100%;
+    min-height: 50vh;
   }
 }
 .main__column:nth-child(2) {
@@ -292,7 +293,7 @@ a {
   line-height: 24px;
   margin-bottom: 4px;
 }
-.form__item input {
+.form__item input:not([type=checkbox]) {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   appearance: none;
@@ -303,13 +304,14 @@ a {
   border-radius: 6px;
   box-shadow: #fff 0px 0px 0px 0px;
   caret-color: #ffffff;
+  color: #ffffff;
   line-height: 1.5;
   outline: none;
   padding: 12px 16px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   width: 100%;
 }
-.form__item input:focus {
+.form__item input:not([type=checkbox]):focus {
   border-color: #80bdff;
 }
 .form__item .btn-success {
@@ -327,6 +329,25 @@ a {
   gap: 10px;
 }
 
+.form__item.checkbox {
+  align-items: center;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: start;
+}
+.form__item.checkbox input {
+  border: 1px solid #dee2e6;
+  border-radius: 0.25em;
+  height: 14px;
+  margin-top: -3px;
+  vertical-align: top;
+  width: 14px;
+}
+.form__item.checkbox label {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+}
+
 .link-success {
   font-family: "Poppins", sans-serif;
   font-size: 0.875rem;
@@ -336,6 +357,21 @@ a {
 }
 .link-success:hover {
   color: rgb(32.11594, 134.08406, 55.4);
+}
+
+.success-message {
+  border-color: #28A745;
+}
+
+.error-message {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75rem;
+  color: #FF0000 !important;
+  display: none;
+}
+
+.error {
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -11,3 +11,17 @@
         color: rgb(32.11594, 134.08406, 55.4);
     }
 }
+
+.success-message {
+    border-color: #28A745;
+}
+
+.error-message {
+    @include font(12);
+    color  : #FF0000 !important;
+    display: none;
+}
+
+.error {
+    display: block;
+}
