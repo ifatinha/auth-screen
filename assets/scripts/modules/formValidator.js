@@ -1,5 +1,5 @@
 import { validatePassword, validateEmail } from "./validator.js";
-import { clearErros } from "./clearErros.js";
+import { clearErrors } from "./clearErrors.js";
 import { displayError } from "./displayErro.js";
 
 export const validateForm = () => {
@@ -17,7 +17,7 @@ export const validateForm = () => {
 
   form.addEventListener("submit", (ev) => {
     ev.preventDefault();
-    clearErros(errorMessages);
+    clearErrors(errorMessages);
     let formIsValid = true;
 
     try {
