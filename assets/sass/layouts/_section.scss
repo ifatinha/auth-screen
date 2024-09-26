@@ -16,7 +16,7 @@
 
         &:nth-child(1) {
             @include flex(center, center);
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/images/home-bg.jpg") no-repeat center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/home-bg.jpg") no-repeat center/cover;
             flex-basis: 40%;
 
             @include devices(m) {
