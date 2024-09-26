@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description"
-        content="Auth-screen: Uma tela de login moderna desenvolvida com HTML, CSS, SASS e JavaScript.">
+        content="Auth-screen: Uma tela de registro moderna desenvolvida com HTML, CSS, SASS e JavaScript.">
     <meta name="keywords" content="HTML, CSS, SASS, JavaScript, Auth Screen, Login Page, Tela de Autenticação">
     <meta name="author" content="Seu Nome">
     <meta name="robots" content="index, follow">
@@ -18,65 +18,67 @@
 </head>
 
 <body>
-    <main class="main">
-        <div class="main__column">
-            <div class="main__title">
-                <h1><strong>Bem-vindo</strong>, parece que você é novo por aqui!</h1>
-            </div>
-        </div>
-        <div class="main__column">
-            <div class="main__container">
-                <div class="main__content">
-                    <p><span>Já é membro?</span> <a href="/index.html" class="link-success">Entrar</a></p>
-                    <h2>Registre sua conta</h2>
-                    <div class="main__content-buttons">
-                        <button type="button" class="btn-primary btn-success" aria-label="Registrar com Google">
-                            <i class="fa-brands fa-google"></i>
-                            Registre-se com o Google
-                        </button>
-                        <button type="button" class="btn-primary btn-gray" aria-label="Entrar com Apple">
-                            <i class="fa-brands fa-apple"></i>
-                        </button>
-                    </div>
-                    <div class="main__content-line">
-                        <hr class="line1">
-                        <span>Ou</span>
-                        <hr class="line2">
-                    </div>
-                    <form class="form" id="register" method="get">
-                        <div class="form__item">
-                            <label for="fullname">Nome completo</label>
-                            <p class="error-message" id="nameError"></p>
-                            <input type="text" name="fullname" id="fullname" placeholder="Digite seu nome" required>
-                        </div>
-                        <div class="form__item">
-                            <label for="email">Endereço de email</label>
-                            <p class="error-message" id="emailError"></p>
-                            <input type="email" name="email" id="email" placeholder="Insira seu e-mail" required>
-                        </div>
-                        <div class="form__item">
-                            <label for="password">Senha</label>
-                            <p class="error-message" id="passwordError"></p>
-                            <input type="password" name="password" id="password" placeholder="Digite sua senha"
-                                required>
-                        </div>
-                        <div class="form__item checkbox">
-                            <input type="checkbox" id="terms" name="terms" value="Terms" required>
-                            <label for="terms">Concordo com os
-                                <a href="#" class="link-success">Termos</a> e
-                                <a href="#" class="link-success">Politica de
-                                    privacidade</a>
-                            </label>
-                        </div>
-                        <div class="form__item">
-                            <button type="submit" class="btn-primary btn-success">
-                                Registrar
-                            </button>
-                        </div>
-                    </form>
+    <main>
+        <section class="section">
+            <div class="section__column">
+                <div class="section__title">
+                    <h1><strong>Bem-vindo</strong>, parece que você é novo por aqui!</h1>
                 </div>
             </div>
-        </div>
+            <div class="section__column">
+                <div class="section__container">
+                    <div class="section__content">
+                        <p><span>Já é membro?</span> <a href="/index.html" class="link-success">Entrar</a></p>
+                        <h2>Registre sua conta</h2>
+                        <div class="section__content-buttons">
+                            <button type="button" class="btn-primary btn-success" aria-label="Registrar com Google">
+                                <i class="fa-brands fa-google"></i>
+                                Registre-se com o Google
+                            </button>
+                            <button type="button" class="btn-primary btn-gray" aria-label="Entrar com Apple">
+                                <i class="fa-brands fa-apple"></i>
+                            </button>
+                        </div>
+                        <div class="section__content-line">
+                            <hr class="line1">
+                            <span>Ou</span>
+                            <hr class="line2">
+                        </div>
+                        <form class="form" id="register" method="get">
+                            <div class="form__item">
+                                <label for="fullname">Nome completo</label>
+                                <p class="error-message" id="nameError"></p>
+                                <input type="text" name="fullname" id="fullname" placeholder="Digite seu nome" required>
+                            </div>
+                            <div class="form__item">
+                                <label for="email">Endereço de email</label>
+                                <p class="error-message" id="emailError"></p>
+                                <input type="email" name="email" id="email" placeholder="Insira seu e-mail" required>
+                            </div>
+                            <div class="form__item">
+                                <label for="password">Senha</label>
+                                <p class="error-message" id="passwordError"></p>
+                                <input type="password" name="password" id="password" placeholder="Digite sua senha"
+                                    required>
+                            </div>
+                            <div class="form__item checkbox">
+                                <input type="checkbox" id="terms" name="terms" value="Terms" required>
+                                <label for="terms">Concordo com os
+                                    <a href="#" class="link-success">Termos</a> e
+                                    <a href="#" class="link-success">Politica de
+                                        privacidade</a>
+                                </label>
+                            </div>
+                            <div class="form__item">
+                                <button type="submit" class="btn-primary btn-success">
+                                    Registrar
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="https://kit.fontawesome.com/09fa9cee0a.js" crossorigin="anonymous"></script>

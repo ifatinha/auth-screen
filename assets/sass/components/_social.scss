@@ -1,0 +1,32 @@
+@use "../global/responsive"as *;
+@use "../layouts/flex"as *;
+@use "../base/colors"as *;
+@use "../base/typography"as *;
+
+.social__sidebar {
+    @include flex(center, center);
+    position: absolute;
+    z-index : 999;
+    width   : 100%;
+
+    @include devices-large-screens() {
+        height: 100%;
+        right : 2.5rem;
+        top   : 0;
+        width : auto;
+    }
+
+    &-icons {
+        @include flex(center, center);
+        gap   : 1rem;
+        margin: 1.5rem 0;
+
+        @include devices-large-screens() {
+            flex-direction: column;
+        }
+
+        @include devices(t) {
+            margin-top: 2rem
+        }
+    }
+}

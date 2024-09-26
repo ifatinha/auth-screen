@@ -41,7 +41,7 @@ export const formRegisterValidor = () => {
     let formIsValid = true;
 
     try {
-      validateEmail(inputs.email);
+      validateEmail(inputs.email.value);
     } catch (err) {
       formIsValid = false;
       displayError(
@@ -51,7 +51,7 @@ export const formRegisterValidor = () => {
     }
 
     try {
-      validatePassword(inputs.password);
+      validatePassword(inputs.password.value);
     } catch (err) {
       formIsValid = false;
       displayError(
@@ -61,7 +61,8 @@ export const formRegisterValidor = () => {
     }
 
     if (formIsValid) {
-      console.log(inputs);
+      alert("Faça login para continuar.");
+      window.location.href = "/index.html";
     }
   });
 };

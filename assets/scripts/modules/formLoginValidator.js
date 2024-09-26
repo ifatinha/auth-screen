@@ -43,7 +43,7 @@ export const formLoginValidator = () => {
     }
 
     if (formIsValid) {
-      alert("Bem Vindo!");
+      window.location.href = "assets/pages/soon.html";
     }
   });
 };

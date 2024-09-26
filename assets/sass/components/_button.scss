@@ -41,3 +41,25 @@
         border-color: map-get($map: $theme-color, $key: "medium-gray");
     }
 }
+
+.btn-round {
+    @include round(64, true);
+    align-items    : center;
+    display        : inline-flex;
+    justify-content: center;
+    transition     : .3s ease-in-out;
+    padding        : 0;
+
+    i {
+        @include text-color("pure-white");
+        height: 1rem;
+    }
+}
+
+.btn-black {
+    background: map-get($map: $theme-color, $key: "black");
+
+    @include hover() {
+        background-color: #333;
+    }
+}

@@ -1,11 +1,11 @@
 @use "sass:math";
 
 @mixin round($size, $circle: false) {
-    height: $size;
-    width : $size;
+    height: #{$size}px;
+    width : #{$size}px;
 
     @if $circle {
-        border-radius: math.div($size, 2);
+        border-radius: 50%;
     }
 }
 
